@@ -1,0 +1,29 @@
+{
+  "name": "idena-network.public.dappnode.eth",
+  "version": "0.1.0",
+  "description": "",
+  "type": "service",
+  "author": "androolloyd <opensource@andrewredden.com> (https://github.com/androolloyd)",
+  "contributors": [
+    "idena-network (https://github.com/idena-network)"
+  ],
+  "categories": [
+    "Developer tools", "Blockchain", "Communications"
+  ],
+  "keywords": [
+    "idena-network"
+  ],
+  "globalEnvs": {
+    "all": true
+  },
+  "backup": [
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/androolloyd/dappnode-idena-network"
+  },
+  "links": {
+    "homepage": "https://idena.network"
+  },
+  "license": "GPL v3"
+}

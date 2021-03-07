@@ -1,0 +1,13 @@
+version: "3.4"
+services:
+  idena-network.public.dappnode.eth:
+    build: ./build
+    image: "idena-network.public.dappnode.eth:0.1.0"
+    restart: unless-stopped
+    environment:
+      - RPC_API_KEY=changeMePlz
+      - IPFS_PROFILE=
+    volumes:
+      - "chain_data:/root/.chaindata"
+volumes:
+  chain_data: {}
