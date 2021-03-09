@@ -16,9 +16,10 @@ FROM ubuntu
 WORKDIR /idena
 
 COPY --from=builder /idena/ .
+COPY docker-entrypoint.sh /usr/bin/docker-entrypoint.sh
 RUN chmod +x "./idena"
 RUN mv ./idena /usr/bin
 
 EXPOSE 9009
 
-ENTRYPOINT idena --datadir=/root/.chaindata --rpcaddr=0.0.0.0 --rpcport=9009 --ipfsport=40405 --profile=${IPFS_PROFILE:-lowpower} --apikey=${RPC_API_KEY} --verbosity=${LOG_LEVEL:-3} ${EXTRA_OPTS}
+ENTRYPOINT ["bash","/usr/bin/docker-entrypoint.sh"]
