@@ -17,6 +17,10 @@
     "all": true
   },
   "backup": [
+    {
+      "name": "nodekey",
+      "path": "/.root/.chaindata/keystore/nodekey"
+    }
   ],
   "repository": {
     "type": "git",

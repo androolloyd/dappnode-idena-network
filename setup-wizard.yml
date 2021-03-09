@@ -1,0 +1,32 @@
+version: "2"
+fields:
+  - id: MONKIER
+    target:
+      type: environment
+      name: MONKIER
+    title: Node Name
+    description: >-
+      Add a string to identify your terra node
+  - id: Node Secret Key
+    target:
+      type: fileUpload
+      path: /root/.chaindata/keystore/nodekey
+    title: Node Secret Key (optional, will create if none is found)
+    description: >-
+      A secret key used to manage your node's identity.
+  - id: LOG_LEVEL
+    target:
+      type: environment
+      name: LOG_LEVEL
+    title: Log-Level
+    enum:
+      - "3"
+      - "2"
+      - "1"
+      - "none"
+    description: >-
+      Set the logging output level for the node
+       - **3**: Outputs only messages tagged as (INFO)
+       - **2**: Outputs all messages (INFO,DEBUG)
+       - **1**: Outputs all messages (INFO,DEBUG,ERROR)
+       - **0**: Outputs no messages

@@ -7,6 +7,7 @@ services:
     environment:
       - RPC_API_KEY=changeMePlz
       - IPFS_PROFILE=
+      - EXTRA_OPTS=
     volumes:
       - "chain_data:/root/.chaindata"
 volumes:
