@@ -23,7 +23,7 @@ fields:
       - "3"
       - "2"
       - "1"
-      - "none"
+      - "0"
     description: >-
       Set the logging output level for the node
        - **3**: Outputs only messages tagged as (INFO)
